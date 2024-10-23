@@ -1,0 +1,88 @@
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #f5f5f5; /* Updated to a light background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+.kanban-board {
+  display: flex;
+  gap: 20px;
+  background-color: white; /* Removed background color */
+  padding: 10px;
+}
+
+.kanban-group {
+  flex: 1;
+  background-color: #f5f5f5; /* Light gray background for the group */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.kanban-group h3 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333; /* Darker text color */
+}
+
+.ticket-card {
+  background-color: white; /* White background for cards */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  border: 1px solid #ddd; /* Subtle border */
+  font-size: 14px;
+  color: #333; /* Darker text for readability */
+}
+
+/* Status color for In Progress */
+.ticket-card.status-in-progress {
+  border-left: 5px solid #f0ad4e; /* Yellow-ish color for 'In Progress' */
+}
+
+/* Status color for Done */
+.ticket-card.status-done {
+  border-left: 5px solid #5cb85c; /* Green color for 'Done' */
+}
+
+/* Status color for Todo */
+.ticket-card.status-todo {
+  border-left: 5px solid #d9534f; /* Red color for 'To Do' */
+}
+
+/* General button styling */
+button {
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown styling in the controls */
+.controls select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  font-size: 14px;
+  color: #333;
+}
